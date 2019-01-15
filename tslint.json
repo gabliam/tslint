@@ -1,7 +1,7 @@
 {
+  "extends": "tslint-eslint-rules",
   "rulesDirectory": [
-    "vrsource-tslint-rules/rules",
-    "node_modules/tslint-eslint-rules/dist/rules"
+    "vrsource-tslint-rules/rules"
   ],
   "linterOptions": {
     "typeCheck": true,

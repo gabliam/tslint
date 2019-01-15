@@ -1,6 +1,6 @@
 {
   "name": "@gabliam/tslint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tslint rules for gabliam components",
   "main": "tslint.json",
   "repository": "git@github.com:gabliam/tslint.git",

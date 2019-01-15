@@ -1,6 +1,6 @@
 {
   "name": "@gabliam/tslint",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "tslint rules for gabliam components",
   "main": "tslint.json",
   "repository": "git@github.com:gabliam/tslint.git",
@@ -8,18 +8,25 @@
   "bugs": "https://github.com/gabliam/tslint/issues",
   "license": "MIT",
   "scripts": {
-    "test": "tslint -p ."
+    "test": "tslint -p .",
+    "publish-please": "publish-please",
+    "prepublishOnly": "publish-please guard",
+    "release": "yarn version && yarn publish-please"
   },
   "files": [
     "/tslint.json"
   ],
   "homepage": "https://github.com/gabliam/tslint",
   "devDependencies": {
+    "publish-please": "^5.4.3",
     "tslint": "^5.12.1",
     "typescript": "^3.2.2"
   },
   "dependencies": {
     "tslint-eslint-rules": "^5.4.0",
     "vrsource-tslint-rules": "^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
